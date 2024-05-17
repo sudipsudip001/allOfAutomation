@@ -1,5 +1,5 @@
 14th May, 2024
-These two files(conda_runner_py.py and conda_runner.bat) can run anaconda prompt in any directory using scripting. The only problem is it isn't much robust as it should be. Maybe it will be improved in the future IDK.
+These two files(conda_runner.py and conda_runner.bat) can run anaconda prompt in any directory using scripting. The only problem is it isn't much robust as it should be. Maybe it will be improved in the future IDK.
 
 The problem is that with each windows reboot or restart the size of right click magically increases or decreases for some reasons. Because of this the clicks aren't accurate and when the click aren't accurate, it's not possible to do what we originally intended that was to automate clicks and enter messages as well. So, everytime I open the script the size of right-click's prompt caused me to rechange the coordinates again in order to adjust the clicks. This clearly isn't efficient.
 
