@@ -1,0 +1,26 @@
+blog
+
+June4, 2024
+I'm creating this auto email bot that'll be able to automate the work of sending emails. When the user clicks the batch file the program should prompt the user for information like, whom to send the email, subject and the message of the email. The information would be stored in separated text files within the folder and be later used by the "main scripting" file to actually send the content.
+
+7:27am
+Actually, I should just save in the id, subject and message in separate txt files. Then the scripting file will run the automation bot which will fetch the id, subject and message from txt files, which'll be in use when actually running the program.
+
+8:07am
+So, I've actually completed the project. There were lots of hits and trails in it but yeah! It's completed. A minor problem came where the size of recipient window came to sort of increase in size, which caused irregularities in clicking the right coordinates to send mail. For this problem I simply typed in the message and subject first which simply solved the problem. I might want to work on sending messages to multiple users later on.
+
+Here's what the program actually does. It first prompts you to enter the email to whom you want to send the email to. Then it prompts the subject and message. After that it creates 3 txt files saving each of the information to the file. Finally, it runs the auto_email.py file where the actual scripting takes place. The program clicks the windows button, types chrome and enters. Then it goes to the search bar and clicks and types in mail, which on my case autosuggests to gmail. Then after hitting enter it waits for 3 seconds as gmail takes some time to load. Then it selects the compose mail and goes to the required coordinates, clicks them and puts in the information from our txt files which was created during the program creation.
+
+To run this program, simply clone this repository. Note that you'll have to make some minor modifications in the actual coordinates according to your actual monitor resolution. The requirements are:
+
+-> have python installed in your system(obviously)
+-> have chrome(if you have any other browser change the text in line number-9 accordingly so your browser is recommended by windows)
+-> have autosuggestions enabled to your gmail. You can change the text in line number-16 to what your pc suggests.
+-> To changes the coordinates, simply open IDLE after you've python installed.(Click windows button and type in IDLE after installing python)
+	- type in 'import pyautogui'
+	- put your mouse cursor in the place where you want the click to happen.
+	- type in 'pyautogui.position()' in your IDLE (it's a bit tricky, you can use ALT+TAB to change tabs quickly)
+	- put the coordinates in the corresponding coordinates in the auto_email.py program
+
+
+You should be good to go!
