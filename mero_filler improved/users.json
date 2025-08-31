@@ -1,0 +1,23 @@
+[
+  {
+    "dpid": "0000",
+    "username": "00000000",
+    "password": "##########",
+    "crn": "0000000###",
+    "transaction": "0000"
+  },
+  {
+    "dpid": "",
+    "username": "",
+    "password": "",
+    "crn": "",
+    "transaction": ""
+  },
+  {
+    "dpid": "",
+    "username": "",
+    "password": "",
+    "crn": "",
+    "transaction": ""
+  }
+]

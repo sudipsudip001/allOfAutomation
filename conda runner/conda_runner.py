@@ -1,7 +1,9 @@
 import pyautogui
 import os
 import time
-var = 'tensorflow-gpu'  # change this name according to your anaconda environment name
+import sys
+var = sys.argv[1] if len(sys.argv) > 1 else 'fused'
+ide = input('1. VS Code \n 2. Jupyter notebook \n (Press Enter to select Jupyter notebook by default) \n')
 
 location = os.getcwd()
 pyautogui.press('win')
@@ -11,7 +13,13 @@ time.sleep(0.5)
 pyautogui.click()
 pyautogui.typewrite('cd ' + location)
 pyautogui.press('enter')
-pyautogui.typewrite('conda activate ' + var)
+if len(var) == 0:
+    pyautogui.typewrite('conda activate fused')
+else:
+    pyautogui.typewrite('conda activate ' + var)
 pyautogui.press('enter')
-pyautogui.typewrite('jupyter-notebook')
+if ide == '1':
+    pyautogui.typewrite('code .')
+else:
+    pyautogui.typewrite('jupyter-notebook')
 pyautogui.press('enter')

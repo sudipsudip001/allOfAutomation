@@ -7,8 +7,10 @@ I don't want to tinker too much into the windows security to change this setting
 
 For now, I've just created another script to type in the texts for me. This way half the script is half as efficient as it previously was although if we were to really quantize it, the efficiency that it brings would probably be about 40%. It's just my personal opinion and 'feel'. I would soon have to find a solution to it to make my life easier. That's it for this today.
 
-
-
 17th May, 2024
 
 Yeah, I finally made it work as it should. The key ingredient was to use 'windows' key instead of the mouse pointer to click at the windows tab. Then you type in commands and hit enter at your will. Also I've used 'os' library to get the directory name from the user and 'time' library to get the current working time.
+
+30th August, 2025
+
+Well, the conda_runner application has been improved. You can now choose between different virtual environments or simply press 'Enter' in order to select the default environment. The requirement is Pyautogui for this script to function, I'm mentioning now cause I forgot to mention it earlier.
